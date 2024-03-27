@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Croissant+One&family=Dancing+Script:wght@500;600&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&display=swap');
+
+:root{
+    --Dark-grayish-blue: hsl(210, 10%, 33%); 
+    --Soft-red: hsl(5, 85%, 63%);
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+  }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+body{
+    font-family: "Inter", sans-serif;
+   
+}
+.container{
+  margin: auto;
+}
+.link{
+    color: rgb(95, 94, 94);
+    font-size: 1rem ;
+}
+.heading {
+    font-size:2.5em ;
+    margin-top: 7px;
+    color:var(--Soft-orange) ;
+    font-weight: 600;
+  }
+.links
+{
+  animation: ease 1s SlideIn;
+}
+
+  .hero_text h1{
+    font-size: 3rem;
+    font-size: 800;
+    
+}
+.button {
+    background-color:hsl(5, 85%, 63%) ;
+    padding: 1em 1.5em;
+    display: inline-block;
+    margin-top: 1.5em;
+    text-decoration: none;
+    color: hsl(36, 100%, 99%) ;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    transition: background-color 1s ease;
+   
+  }
+  article img{
+    height: 170px;
+  }
+.article a{
+    color: hsl(36, 100%, 99%);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+.article p{
+    font-size: 15px;
+    color: rgb(200, 199, 199);
+    margin-top: 0.4rem;
+}
+.article{
+    margin: 25px 5px;
+  border-bottom: 1px solid rgb(44, 44, 44);
+  padding-bottom: 20px;
+}
+.article a:hover{
+  color: var(--Soft-orange) !important;
+}
+aside{
+  animation: moveDown 1s ease;
+}
+.button:hover{
+  background-color: black;
+}
+.contant h2{
+  color: hsl(233, 8%, 79%);
+  font-size: 2em;
+}
+.contant h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
+@keyframes SlideIn{
+  0%{
+    transform:translateY(-50px);
+    opacity: 0;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+}
+.animated-container {
+  position: relative;
+  animation: moveDown 1.5s ease; 
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateX(50px); 
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
